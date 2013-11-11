@@ -41,8 +41,8 @@ TweetStream::Client.new.follow(2187636229) do |status|
   text = text + "Status: " + status.text + "\n"
 
   if keywordFound == 1
-  	  puts text
-	  message = @client.account.messages.create(
+  	puts text
+  	message = @client.account.messages.create(
 	  :from => '+14437983200',
 	  :to => '+14438342310',
 	  :body => text
