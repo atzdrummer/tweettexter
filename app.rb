@@ -11,14 +11,14 @@ end
 
 
 # put your own credentials here
-account_sid = 'AC235bb85f6223d8e29d83a6547f1eb65b'
-auth_token = 'c59e3fbd96e33519e30173e8aeef8a79'
+account_sid = 'twilio account id'
+auth_token = 'twilio account token'
 
 TweetStream.configure do |config|
-	config.consumer_key       = 'DsvgaONFVB1X3ZyA7WOmVg'
-	config.consumer_secret    = 'P6jqjV92yMrRfmULadWQvuzfaz61S3mEvZ33d7kBBTU'
-	config.oauth_token        = '19437640-jvDXV0NM1lY2WIr44zm7soRew0nHjqQydoaM5vVr2'
-	config.oauth_token_secret = 'WErlDQuNfuVKfSpQhSK89l7JTVS98d0gfJmjX0QDjik'
+	config.consumer_key       = 'twitter consumer key'
+	config.consumer_secret    = 'twitter consumer secret'
+	config.oauth_token        = 'twitter access token'
+	config.oauth_token_secret = 'twitter access token secret'
 	config.auth_method        = :oauth
 end
 
