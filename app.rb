@@ -10,7 +10,7 @@ ARGV.each do|keyword|
 end
 
 
-# put your own credentials here
+# put Twilio credentials here
 account_sid = 'twilio account id'
 auth_token = 'twilio account token'
 
@@ -32,7 +32,7 @@ TweetStream::Client.new.follow(2187636229) do |status|
 	text = "A tweet has been posted with keywords: " + "\n"
 
 	keywords.each { |key, value| 
-		if status.text.downcase.match(key.downcase)
+		if status.text.downcase.match(key.downcase) & value == 1
 			text = text + key + "\n"
 			keywordFound = 1
 		end
